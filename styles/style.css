@@ -1,0 +1,77 @@
+/* || Variables */
+:root {
+    /* Colors */
+    --background-first-color: #1A1A1A;
+    --border-number-color: hsl(210, 100%, 80%);
+    --border-number-radius: 5px;
+
+    /* Fonts */
+    --sans-serif: sans-serif;
+
+    /* Widths and heights */
+    --header-mobile-height: 50px;
+}
+
+/* || Utilities */
+.big {
+    font-size: 1em;
+    align-self: center;
+    flex-basis: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+/* || Cleaning */
+body,
+a,
+input {
+    font-family: var(--sans-serif);
+    color: #F2F2F2;
+    border: none;
+    background-color: var(--background-first-color);
+}
+
+a {
+    font-family: var(--sans-serif);
+    text-decoration: none;
+}
+
+input[type='number'] {
+    border: 1px solid var(--border-number-color);
+    border-radius: var(--border-number-radius);
+}
+
+/* || General styles */
+.header {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.header__list {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.header__links {
+    margin-top: 3vh;
+    margin-right: 1vw;
+}
+
+.header__links--active {
+    color: red;
+}
+
+#hamburger {
+    align-self: center;
+    width: 100%;
+    padding: 0;
+    text-align: end;
+    border: none;
+    background: var(--background-first-color);
+}
+
+/* Typography */
